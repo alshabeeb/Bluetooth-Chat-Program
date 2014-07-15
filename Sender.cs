@@ -29,6 +29,8 @@ namespace Bluetooth_Chat_sender
 				*/
 				sp.Open ();
 
+
+
 				while (true)	// Infinite loop
 				/* Send all keyboard-typed input via the Bluetooth device */
 					sp.WriteLine(Console.ReadLine());
