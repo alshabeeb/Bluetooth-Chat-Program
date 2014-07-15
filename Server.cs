@@ -28,6 +28,8 @@ namespace Bluetooth_Chat_server
 			*/
 			sp.Open ();
 
+
+
 			while (true)	// Infinite loop
 				/* Print received input from Client Bluetooth device */
 				Console.WriteLine (sp.ReadLine());
