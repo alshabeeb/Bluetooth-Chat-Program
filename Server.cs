@@ -12,7 +12,9 @@ namespace Bluetooth_Chat_server
 			   established virtual COM Port number; e.g., COM1, COM12, etc... */
 			const string COM_PORT = "COM#";
 
-			const int BAUD_RATE = 9600;	/* 9600 MHz for baud rate, we'll discuss this value later */
+
+			/* 9600 MHz for baud rate, we'll discuss this value later */
+			const int BAUD_RATE = 9600;
 
 
 			/* Establish an instantiation of SerialPort class that
