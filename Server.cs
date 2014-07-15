@@ -19,12 +19,18 @@ namespace Bluetooth_Chat_server
 			  reads off Com Port @COM_PORT at @BAUD_RATE MHz */
 			SerialPort sp = new SerialPort (COM_PORT, BAUD_RATE);							   
 
-			sp.Open ();		/* Open the desired COM Port
-							 * Note: The program will crash at this line if you specify the wrong COM Port or Baud Rate
-							*/
+
+			/* Open the desired COM Port
+			  Note: The program will crash at this line if
+			  you specify the wrong COM Port or Baud Rate
+			*/
+			sp.Open ();
 
 			while (true)	// Infinite loop
-				Console.WriteLine (sp.ReadLine());	/* Print received input from Client Bluetooth device */
+				/* Print received input from Client Bluetooth device */
+				Console.WriteLine (sp.ReadLine());
+				
+				
 		}	// EOF Main.. Note: EOF stands for End OF
 	}	// EOF @Server
 }	// EOF @BluetoothChat
